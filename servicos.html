@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <!--Fonte awesome (Dowloand - font awesome 4.7 cdn) São as estrelas-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Inicio do cabeçalho-->
+
+    <header style="background-image: url('img/background-servicos.jpg');"> <!--Html inline, usando css no proprio html-->
+
+        <div class="container">
+            <nav> <!--Criando o Menu-->
+                <a href="index.html"> 
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+                <ul class="ul">
+                    <a href="index.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a class="btn" href="contato.html">Contato</a>
+                    <div class="close-icon" onclick="closeMenu()"><i class="fa fa-times-circle-o"></i>
+                    </div>
+                </ul>
+
+                <!--Responsividade-->
+                <div class="menu-icon" onclick="openMenu()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </nav> <!--Fim do Menu-->
+
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>Serviços</h1>
+                </div>
+            </section>
+
+        </div>
+    </header>
+    <!--Fim do cabeçalho-->
+
+    <section class="servicos">
+        <div class="container">
+            <h3>Nossos Serviços</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi nihil exercitationem ducimus iste, qui omnis, ratione incidunt tempore consectetur eos est. Quisquam quos qui porro dicta sed numquam voluptatum?</p>
+        </div>
+
+        <!--Inicio Cards-->
+        <div class="rows-cards">
+            <!--row cards ' '-->
+            <div class="row-card-item">
+                <img src="img/cloud.png" alt="Cloud">
+                <p class="nome-servico"><strong>Serviços</strong></p>
+                <p class="descricao-servico">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aliquid, aliquam neque nisi necessitatibus tempora? Dolore atque natus delectus odio molestias sequi quos nesciunt saepe, aliquid consequuntur eos totam voluptates.
+                </p>
+            </div>
+            <!--row end card item 2-->
+             <!--row cards ' '-->
+             <div class="row-card-item">
+                <img src="img/digital-marketing.png" alt="Cloud">
+                <p class="nome-servico"><strong>marketing digital</strong></p>
+                <p class="descricao-servico">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aliquid, aliquam neque nisi necessitatibus tempora? Dolore atque natus delectus odio molestias sequi quos nesciunt saepe, aliquid consequuntur eos totam voluptates.
+                </p>
+            </div>
+            <!--row end card item 2-->
+            <!--row end card item 3-->
+             <!--row cards ' '-->
+             <div class="row-card-item">
+                <img src="img/seo.png" alt="Cloud">
+                <p class="nome-servico"><strong>SEO</strong></p>
+                <p class="descricao-servico">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aliquid, aliquam neque nisi necessitatibus tempora? Dolore atque natus delectus odio molestias sequi quos nesciunt saepe, aliquid consequuntur eos totam voluptates.
+                </p>
+            </div>
+            <!--row end card item 3-->
+            <!--row end card item 4-->
+             <!--row cards ' '-->
+             <div class="row-card-item">
+                <img src="img/virtual_store.png" alt="Cloud">
+                <p class="nome-servico"><strong>Criação de Lojas Virtuais</strong></p>
+                <p class="descricao-servico">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aliquid, aliquam neque nisi necessitatibus tempora? Dolore atque natus delectus odio molestias sequi quos nesciunt saepe, aliquid consequuntur eos totam voluptates.
+                </p>
+            </div>
+            <!--row end card item 4-->
+             <!--row end card item 5-->
+             <!--row cards ' '-->
+             <div class="row-card-item">
+                <img src="img/layer.png" alt="Cloud">
+                <p class="nome-servico"><strong>Designer</strong></p>
+                <p class="descricao-servico">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aliquid, aliquam neque nisi necessitatibus tempora? Dolore atque natus delectus odio molestias sequi quos nesciunt saepe, aliquid consequuntur eos totam voluptates.
+                </p>
+            </div>
+            <!--row end card item 5-->
+            <!--row end card item 6-->
+             <!--row cards ' '-->
+             <div class="row-card-item">
+                <img src="img/manager.png" alt="Cloud">
+                <p class="nome-servico"><strong>manager</strong></p>
+                <p class="descricao-servico">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aliquid, aliquam neque nisi necessitatibus tempora? Dolore atque natus delectus odio molestias sequi quos nesciunt saepe, aliquid consequuntur eos totam voluptates.
+                </p>
+            </div>
+            <!--row end card item 6-->
+        </div>
+        <!--Fim Cards-->
+    </section>
+    <!--end section serviços-->
+
+    <section class="dados">
+        <div class="container">
+            <!--Dados Item-->
+            <div class="dados-item">
+                <img src="img/cloud.png" alt="Cloud">
+                <p><strong>+360</strong> <br>
+                Projetos Concluidos</p>
+            </div>
+            <!--End dados item-->
+            <!--Dados Item-->
+            <div class="dados-item">
+                <img src="img/manager.png" alt="Cloud">
+                <p><strong>+890</strong><br>
+                Clientes Satisfeitos</p>
+            </div>
+            <!--End dados item-->
+            <!--Dados Item-->
+            <div class="dados-item">
+                <img src="img/manager.png" alt="Cloud">
+                <p><strong>+4303</strong> <br>
+                Jornada de Trabalho</p>
+            </div>
+            <!--End dados item-->
+            <!--Dados Item-->
+            <div class="dados-item">
+                <img src="img/cloud.png" alt="Cloud">
+                <p><strong>+254</strong> <br>
+                Publicidade paga</p>
+            </div>
+            <!--End dados item-->
+        </div>
+
+    </section>
+
+
+    <!--Footer i fa fa é Awesome icons--> 
+    <footer class="footer">
+        <div class="container">
+            <div class="links">
+                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="#"><i class="fa fa-github" aria-hidden="true"></i>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </div>
+            <p>Desensolvivo por David Costa</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

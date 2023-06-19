@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicial</title>
+    <!--Fonte awesome (Dowloand - font awesome 4.7 cdn) São as estrelas-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Inicio do cabeçalho-->
+
+    <header style="background-image: url('img/background-home.jpg');"> <!--Html inline, usando css no proprio html-->
+
+        <div class="container">
+            <nav> <!--Criando o Menu-->
+                <a href="index.html"> 
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+                <ul class="ul">
+                    <a href="index.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a class="btn" href="contato.html">Contato</a>
+                    <div class="close-icon" onclick="closeMenu()"><i class="fa fa-times-circle-o"></i>
+                    </div>
+                </ul>
+
+                <!--Responsividade-->
+                <div class="menu-icon" onclick="openMenu()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </nav> <!--Fim do Menu-->
+
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>Bem-Vindo ao Santo Scenarium</h1>
+                    <p>Conheçaas melhores comidas da região!</p>
+                    <a href="contato.html" class="btn">Entrar em contato</a>
+                </div>
+            </section>
+
+        </div>
+    </header>
+    <!--Fim do cabeçalho-->
+
+    <section class="faca-mais">
+        <!--Container do Faça mais-->
+        <div class="container">
+            <div class="faca-mais-text">
+                <h3>Faça Mais!</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas repudiandae harum natus aut aliquam, mollitia aliquid, dicta, sed sequi ad quisquam ex ipsum. Tempora, nesciunt rerum distinctio modi minus nihil.</p>
+                <a href="contato.html" class="btn animate-btn">Entrar em contato</a>
+            </div>
+
+            <div class="faca-mais-img">
+                <img src="img/img-1.png" alt="imagem">
+            </div>
+        </div>
+        <!--Final do container faça mais-->
+    </section>
+
+    <section class="faca-mais">
+        <!--Container do Faça mais 2 2 2 2 -->
+        <div class="container">
+            <div class="faca-mais-img">
+                <img src="img/img-2.png" alt="imagem">
+            </div>
+            <div class="faca-mais-text">
+                <h3>Faça Mais!</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas repudiandae harum natus aut aliquam, mollitia aliquid, dicta, sed sequi ad quisquam ex ipsum. Tempora, nesciunt rerum distinctio modi minus nihil.</p>
+                <a href="contato.html" class="btn animate-btn">Entrar em contato</a>
+            </div> 
+        </div>
+        <!--Final do container faça mais 2 2 2 2-->
+    </section>
+
+    <!--DEPOIMENTOS-->
+    <section class="depoimentos">
+        <div class="container">
+            <h3>Nossos Depoimentos</h3>
+            <p>Leia o que nosso clientes falam de nós para o mundo!</p>
+            
+            <!-- Card Item 1-->
+            <div class="cards">
+                <div class="card-item">
+                    <img src="img/me.jpg" alt="David">
+                    <p class="nome-user">David Antunes</p>
+                    <p class="depoimento-user">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam sint, inventore tempore quaerat ipsa doloribus sunt non quam magnam autem mollitia, recusandae doloremque corporis distinctio! Cumque corrupti ea natus dolorem.</p>
+
+                    <div class="estrelas">
+                        <i class="fa fa-star" aria-hidden="true"></i><!--Pega do site fontwesome e copia no codigo-->
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i> 
+                        <i class="fa fa-star-half" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!-- FINAL Card Item 1-->
+
+                <!-- Card Item 2-->
+            <div class="cards">
+                <div class="card-item">
+                    <img src="img/me.jpg" alt="David">
+                    <p class="nome-user">David Antunes</p>
+                    <p class="depoimento-user">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam sint, inventore tempore quaerat ipsa doloribus sunt non quam magnam autem mollitia, recusandae doloremque corporis distinctio! Cumque corrupti ea natus dolorem.</p>
+
+                    <div class="estrelas">
+                        <i class="fa fa-star" aria-hidden="true"></i><!--Pega do site fontwesome e copia no codigo-->
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i> 
+                        <i class="fa fa-star-half" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!-- FINAL Card Item 2-->
+
+                <!-- Card Item 3-->
+            <div class="cards">
+                <div class="card-item">
+                    <img src="img/me.jpg" alt="David">
+                    <p class="nome-user">David Antunes</p>
+                    <p class="depoimento-user">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam sint, inventore tempore quaerat ipsa doloribus sunt non quam magnam autem mollitia, recusandae doloremque corporis distinctio! Cumque corrupti ea natus dolorem.</p>
+
+                    <div class="estrelas">
+                        <i class="fa fa-star" aria-hidden="true"></i><!--Pega do site fontwesome e copia no codigo-->
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i> 
+                        <i class="fa fa-star-half" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!-- FINAL Card Item 3-->
+            </div>
+        </div>
+    </section>
+
+    <!--Nossos Parceiros-->
+    <section class="clientes">
+        <div class="container">
+            <h3>Nossos Parceiros</h3>
+            <p>Faz parte do nosso grupo.</p>
+            <div>
+                <img src="img/apple.png" alt="apple">
+                <img src="img/microsoft.png" alt="microsoft">
+                <img src="img/slack.png" alt="Slack">
+                <img src="img/google.png" alt="Google">
+            </div>
+        </div>
+    </section> <!--Fim dos nossos parceiros-->
+
+    <section class="faca-mais">
+        <!--Container do Faça mais-->
+        <div class="container">
+            <div class="faca-mais-text">
+                <h3>Fale Conosco</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas repudiandae harum natus aut aliquam, mollitia aliquid, dicta, sed sequi ad quisquam ex ipsum. Tempora, nesciunt rerum distinctio modi minus nihil.</p>
+                <a href="contato.html" class="btn animate-btn">Entrar em contato</a>
+            </div>
+
+            <div class="faca-mais-img">
+                <img src="img/security.png" alt="imagem">
+            </div>
+        </div>
+        <!--Final do container faça mais-->
+    </section>
+
+    <!--Footer i fa fa é Awesome icons--> 
+    <footer class="footer">
+        <div class="container">
+            <div class="links">
+                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="#"><i class="fa fa-github" aria-hidden="true"></i>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </div>
+            <p>Desensolvivo por David Costa</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
