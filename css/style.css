@@ -11,6 +11,9 @@
 
 body {
     background-color: #f1f6fc31;
+    background-image: url('../img/img-santo/1.png');
+    background-size: contain;
+    background-attachment: fixed;
 }
 
 section, footer {
@@ -22,7 +25,7 @@ h3 {
 }
 
 p {
-    color: #0000009c;
+    color: white;
 }
 
 .container {
@@ -149,65 +152,6 @@ nav .close-icon {
 /*Container nos conenheça!*/
 
 /*SLIDER CONHEÇA RESTAURANTE - INICIO*/
-.slider {
-    display: block;
-    height: 293px;
-    width: 600px;
-    margin: auto;
-    margin-top: 20px;
-    position: relative;
-}
-
-.slider li {
-    list-style: none;
-    position: absolute;
-}
-
-.slider img {
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    vertical-align: top;
-}
-
-.slider input {
-    display: none;
-}
-
-.slider label {
-    background-color: #000;
-    bottom: 10px;
-    cursor: pointer;
-    display: block;
-    height: 10px;
-    position: absolute;
-    width: 10px;
-    z-index: 10;
-}
-
-.slider li:nth-child(1) label {
-    left: 10px;
-}
-
-.slider li:nth-child(2) label {
-    left: 40px;
-}
-
-.slider li:nth-child(3) label {
-    left: 70px;
-}
-
-.slider img {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.slider li input:checked ~ img {
-    opacity: 1;
-    visibility: visible;
-    z-index: 10;
-}
-
 /*SLIDER CONHEÇA RESTAURANTE - FINAL*/
 
 .faca-mais .container {
@@ -225,6 +169,7 @@ nav .close-icon {
 }
 
 .faca-mais .faca-mais-text p {
+    font-size: 20px;
     margin: 5px 0 10px; 
 }
 
@@ -233,7 +178,7 @@ nav .close-icon {
 }
 
 .faca-mais .faca-mais-img img {
-    width: 90%; /*Ocupa 100% do elemento pai, que seria o "facamais img*/
+    width: 100%; /*Ocupa 100% do elemento pai, que seria o "facamais img*/
     border-radius: 50px;
 }
 
@@ -302,7 +247,7 @@ nav .close-icon {
     color: white;
 }
 
-/*Conheça nosso Grupo*/
+/*Nossos Parceiros*/
 .clientes h3, 
 .clientes p{
     text-align: center;
@@ -314,6 +259,11 @@ nav .close-icon {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+.clientes .container div a:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /*Footer*/
@@ -522,6 +472,9 @@ nav .close-icon {
 
 /*Responsividade do Menu*/
 @media(max-width: 830px) {
+    .faca-mais-img iframe {
+        width: 100%;
+    }
     .ul {
         position: fixed;
         top: 0;
