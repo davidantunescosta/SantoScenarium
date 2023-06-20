@@ -21,6 +21,7 @@ section, footer {
 }
 
 h3 {
+    color: white;
     font-size: 50px;
 }
 
@@ -198,7 +199,7 @@ nav .close-icon {
 }
 
 .depoimentos .card-item {
-    background-color: #d3e6fd;
+    background-color: rgba(84, 14, 14, 0.568);
     margin: 15px;
     border-radius: 14px;
     text-align: center;
@@ -239,7 +240,7 @@ nav .close-icon {
 }
 
 .depoimentos .card-item:hover {
-    background-color: #4f9cf9;
+    background-color: black;
     margin-top: -5px;
 }
 
