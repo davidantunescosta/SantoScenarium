@@ -170,6 +170,7 @@ nav .close-icon {
 .cards {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /*Ele vai faazer quebrar na responsividade*/
 }
 
 .depoimentos .card-item {
@@ -232,6 +233,7 @@ nav .close-icon {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 /*Footer*/
@@ -368,6 +370,76 @@ nav .close-icon {
     font-size: 28px;
 }
 
+/*Página de Contato - Inicio*/
+.contato-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.contato-info .left-side {
+    width: 50%;
+    padding: 30px;
+    background-color: #4f9cf9;
+    border-radius: 14px;
+    margin-right: 50px;
+    height: fit-content; /*A altura vai ser baseado em seu conteudo*/
+}
+
+.contato-info .left-side div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contato-info .left-side div i {
+    font-size: 24px;
+    margin-right: 20px;
+    color: white;
+}
+
+.contato-info .left-side p {
+    font-size: 17px;
+    color: white;
+}
+
+.contato-info .rigth-side {
+    width: 50%;
+}
+
+.contato-info .rigth-side input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 47px;
+    padding: 15px;
+    border-radius: 9px;
+    transition: 0.3s;
+    border: 1px solid black;
+    color: #212121;
+    font-weight: lighter;
+}
+
+.contato-info .rigth-side input:focus,
+.contato-info .rigth-side textarea:focus {
+    border-color: #4f9cf9;
+}
+
+.contato-info .rigth-side textarea {
+    border: 1px solid #f1f1f1;
+    color: #212121;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 100%;
+    transition: 0.3s;
+    resize: none; /*Tira a opção da caixa de mensagem*/
+}
+
+
+
+/*Página de Contato - FIM*/
+
 /*Responsividade do Menu*/
 @media(max-width: 830px) {
     .ul {
@@ -401,5 +473,82 @@ nav .close-icon {
         position: absolute;
         top: 46px;
         right: 28px;
+    }
+    /*Página Inicial Reponsiva*/
+.faca-mais .faca-mais-text {
+    margin-top: 10px;
+    padding: 0 20px;
+    order: 1;
+}
+
+.faca-mais .container{
+    flex-direction: column;
+}
+
+.faca-mais .faca-mais-text h3 {
+    font-size: 48px;
+}
+
+.faca-mais .faca-mais-text,
+.faca-mais .faca-mais-img {
+    width: 100%;
+}
+
+/*Banner Responsivo*/
+.banner .banner-text {
+    padding: 0;
+    margin: 80px;
+}
+
+.banner .banner-text h1 {
+    font-size: 80px;
+}
+
+
+.banner .banner-text p{
+    font-size: 15px;
+}
+
+.depoimentos .card-item {
+    width: 100%;
+}
+
+/*Pagina Sobre Responsividade*/
+.sobre .container {
+    flex-direction: column-reverse; /*Troca a ordem da coluna*/
+}
+
+.sobre .sobre-img,
+.sobre .sobre-text {
+    width: 100%;
+}
+
+.sobre .sobre-text {
+    margin-top: 40px;
+}
+
+
+/*Pagina contato Responsivo*/
+.contato .contato-info{
+    flex-direction: column-reverse;
+}
+
+.contato-info .rigth-side,
+.contato-info .left-side {
+    width: 100%;
+}
+
+.contato-info .rigth-side{
+    margin-bottom: 30px;
+}
+
+}
+
+@media (max-width:500px) {
+    .banner .banner-text h1 {
+        font-size: 50px;
+    }
+    .faca-mais .faca-mais-text h3{
+        font-size: 40px;
     }
 }
