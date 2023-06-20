@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@300;400;500;600;700&display=swap');
 * {
     margin: 0px;
     padding: 0px;
     text-decoration: none;
     box-sizing: border-box;
     outline: none;
-    font-family: 'Inter', sans-serif;
+    /*font-family: 'Inter', sans-serif;*/
 }
 
 body {
@@ -133,18 +134,82 @@ nav .close-icon {
 }
 
 .banner .banner-text h1 {
+    font-family: 'Dancing Script', cursive;
     font-size: 96px;
     color: white;
 }
 
 .banner .banner-text p {
-    font-size: 20px;
+    font-size: 25px;
     color: #ffffffb7;
     font-weight: lighter;
     margin: 18px 0;
 }
 
-/*Container faça mais!*/
+/*Container nos conenheça!*/
+
+/*SLIDER CONHEÇA RESTAURANTE - INICIO*/
+.slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+/*SLIDER CONHEÇA RESTAURANTE - FINAL*/
+
 .faca-mais .container {
     display: flex;
     align-items: center;
@@ -237,13 +302,14 @@ nav .close-icon {
     color: white;
 }
 
-/*Nossos Parceiros*/
+/*Conheça nosso Grupo*/
 .clientes h3, 
 .clientes p{
     text-align: center;
 }
 
 .clientes .container div {
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
